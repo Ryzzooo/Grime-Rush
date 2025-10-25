@@ -12,6 +12,11 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
+        Move();
+    }
+
+    void Move()
+    {
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
         movement.Normalize();
