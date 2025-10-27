@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 65c663e9994231d4a9f07a6c24bad9e8
+guid: 27efb89918e1d9d478514bd931acea05
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7416657123872467947
-    second: "\u2014Pngtree\u2014a child is sweeping the_17414624_0"
+      213: 7905334625630184337
+    second: Sampah Plastik-PNG_0
+  - first:
+      213: -8872026032042193971
+    second: Sampah Plastik-PNG_1
+  - first:
+      213: 8337053324343552421
+    second: Sampah Plastik-PNG_2
+  - first:
+      213: -687633380305299008
+    second: Sampah Plastik-PNG_3
+  - first:
+      213: -7540711361946695312
+    second: Sampah Plastik-PNG_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,30 +121,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014a child is sweeping the_17414624_0"
+      name: Sampah Plastik-PNG_0
       rect:
         serializedVersion: 2
-        x: 430
-        y: 133
-        width: 1718
-        height: 2241
+        x: 895
+        y: 963
+        width: 129
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bebe949eb524de660800000000000000
-      internalID: 7416657123872467947
+      spriteID: 193684f25f365bd60800000000000000
+      internalID: 7905334625630184337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sampah Plastik-PNG_1
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 527
+        width: 289
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcb4b12745b30e480800000000000000
+      internalID: -8872026032042193971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sampah Plastik-PNG_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 325
+        width: 138
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9acfea3d923b370800000000000000
+      internalID: 8337053324343552421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sampah Plastik-PNG_3
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 307
+        width: 331
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9933775190576f0800000000000000
+      internalID: -687633380305299008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sampah Plastik-PNG_4
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 136
+        width: 472
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0794a6df7f20a5790800000000000000
+      internalID: -7540711361946695312
       vertices: []
       indices: 
       edges: []
@@ -160,8 +247,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "\u2014Pngtree\u2014a child is sweeping the_17414624_0": 7416657123872467947
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

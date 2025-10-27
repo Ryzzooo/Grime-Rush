@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 65c663e9994231d4a9f07a6c24bad9e8
+guid: 6319a74b00f8f174592882c8565584d1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7416657123872467947
-    second: "\u2014Pngtree\u2014a child is sweeping the_17414624_0"
+      213: 3668182140799285250
+    second: Tong Sampah E-Waste PNG_0
+  - first:
+      213: -6933245840274954014
+    second: Tong Sampah E-Waste PNG_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,30 +112,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014a child is sweeping the_17414624_0"
+      name: Tong Sampah E-Waste PNG_0
       rect:
         serializedVersion: 2
-        x: 430
-        y: 133
-        width: 1718
-        height: 2241
+        x: 132
+        y: 0
+        width: 340
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bebe949eb524de660800000000000000
-      internalID: 7416657123872467947
+      spriteID: 208f5c1e83008e230800000000000000
+      internalID: 3668182140799285250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tong Sampah E-Waste PNG_1
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 340
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8e4f564a928cf90800000000000000
+      internalID: -6933245840274954014
       vertices: []
       indices: 
       edges: []
@@ -160,8 +172,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "\u2014Pngtree\u2014a child is sweeping the_17414624_0": 7416657123872467947
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

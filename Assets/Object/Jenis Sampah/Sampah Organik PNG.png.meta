@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 65c663e9994231d4a9f07a6c24bad9e8
+guid: 579f6988c0692f54baf2d5ef9550c210
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7416657123872467947
-    second: "\u2014Pngtree\u2014a child is sweeping the_17414624_0"
+      213: -6375023117993078046
+    second: Sampah Organik PNG_0
+  - first:
+      213: -3955489573628283609
+    second: Sampah Organik PNG_1
+  - first:
+      213: -6309328839543037939
+    second: Sampah Organik PNG_2
+  - first:
+      213: -5502179389816531191
+    second: Sampah Organik PNG_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,40 +118,71 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014a child is sweeping the_17414624_0"
+      name: Sampah Organik PNG_1
       rect:
         serializedVersion: 2
-        x: 430
-        y: 133
-        width: 1718
-        height: 2241
+        x: 906
+        y: 896
+        width: 110
+        height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bebe949eb524de660800000000000000
-      internalID: 7416657123872467947
+      spriteID: 725ff1b90374b19c0800000000000000
+      internalID: -3955489573628283609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sampah Organik PNG_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 90
+        width: 280
+        height: 509
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00e8e349d2c078a0800000000000000
+      internalID: -6309328839543037939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sampah Organik PNG_3
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 301
+        width: 404
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907928b2ff454a3b0800000000000000
+      internalID: -5502179389816531191
       vertices: []
       indices: 
       edges: []
@@ -151,7 +191,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 271f51dac1bd20e4394fef4fdc5702b6
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +201,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u2014Pngtree\u2014a child is sweeping the_17414624_0": 7416657123872467947
+      Sampah Organik PNG_1: -3955489573628283609
+      Sampah Organik PNG_2: -6309328839543037939
+      Sampah Organik PNG_3: -5502179389816531191
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

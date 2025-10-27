@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 65c663e9994231d4a9f07a6c24bad9e8
+guid: 18b10da547387c84b9a02b3f5ebfa661
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7416657123872467947
-    second: "\u2014Pngtree\u2014a child is sweeping the_17414624_0"
+      213: 8947671754601863978
+    second: Sampah Kertas PNG_0
+  - first:
+      213: 508458388421805179
+    second: Sampah Kertas PNG_1
+  - first:
+      213: -6449024611615210707
+    second: Sampah Kertas PNG_2
+  - first:
+      213: -1742856770954454415
+    second: Sampah Kertas PNG_3
+  - first:
+      213: -5596251693877346882
+    second: Sampah Kertas PNG_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,30 +121,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014a child is sweeping the_17414624_0"
+      name: Sampah Kertas PNG_0
       rect:
         serializedVersion: 2
-        x: 430
-        y: 133
-        width: 1718
-        height: 2241
+        x: 911
+        y: 940
+        width: 94
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bebe949eb524de660800000000000000
-      internalID: 7416657123872467947
+      spriteID: a2b17d3dd048c2c70800000000000000
+      internalID: 8947671754601863978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sampah Kertas PNG_1
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 586
+        width: 625
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7403f8d5386e0700800000000000000
+      internalID: 508458388421805179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sampah Kertas PNG_2
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 440
+        width: 230
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d238cecb8467086a0800000000000000
+      internalID: -6449024611615210707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sampah Kertas PNG_3
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 360
+        width: 376
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a10e8300120d7e0800000000000000
+      internalID: -1742856770954454415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sampah Kertas PNG_4
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 54
+        width: 643
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd33c01cbe1652b0800000000000000
+      internalID: -5596251693877346882
       vertices: []
       indices: 
       edges: []
@@ -160,8 +247,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "\u2014Pngtree\u2014a child is sweeping the_17414624_0": 7416657123872467947
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

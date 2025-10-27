@@ -1,10 +1,43 @@
 fileFormatVersion: 2
-guid: 65c663e9994231d4a9f07a6c24bad9e8
+guid: 0f7d0c7d1ecf4fd4d8c3d55f7ced20ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7416657123872467947
-    second: "\u2014Pngtree\u2014a child is sweeping the_17414624_0"
+      213: -1490215024884323807
+    second: Sampah Kaca PNG_0
+  - first:
+      213: -1251265843656691452
+    second: Sampah Kaca PNG_1
+  - first:
+      213: -6900562115829226486
+    second: Sampah Kaca PNG_2
+  - first:
+      213: 8632574543872428512
+    second: Sampah Kaca PNG_3
+  - first:
+      213: 5607268014120392838
+    second: Sampah Kaca PNG_4
+  - first:
+      213: -7109089445546877468
+    second: Sampah Kaca PNG_5
+  - first:
+      213: 3998892757317953209
+    second: Sampah Kaca PNG_6
+  - first:
+      213: 1706107802077535733
+    second: Sampah Kaca PNG_7
+  - first:
+      213: 4109091718936748070
+    second: Sampah Kaca PNG_8
+  - first:
+      213: -1428192800356623264
+    second: Sampah Kaca PNG_9
+  - first:
+      213: -7768556060459423639
+    second: Sampah Kaca PNG_10
+  - first:
+      213: 4621412245437199981
+    second: Sampah Kaca PNG_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,40 +142,71 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u2014Pngtree\u2014a child is sweeping the_17414624_0"
+      name: Sampah Kaca PNG_0
       rect:
         serializedVersion: 2
-        x: 430
-        y: 133
-        width: 1718
-        height: 2241
+        x: 927
+        y: 953
+        width: 67
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bebe949eb524de660800000000000000
-      internalID: 7416657123872467947
+      spriteID: 12ae1d29451b15be0800000000000000
+      internalID: -1490215024884323807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sampah Kaca PNG_3
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 153
+        width: 174
+        height: 541
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e988907fc01dc770800000000000000
+      internalID: 8632574543872428512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sampah Kaca PNG_7
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 361
+        width: 562
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd9a53b1005da710800000000000000
+      internalID: 1706107802077535733
       vertices: []
       indices: 
       edges: []
@@ -151,7 +215,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b847caef90219f045b1459f3dd80631c
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +225,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u2014Pngtree\u2014a child is sweeping the_17414624_0": 7416657123872467947
+      Sampah Kaca PNG_0: -1490215024884323807
+      Sampah Kaca PNG_3: 8632574543872428512
+      Sampah Kaca PNG_7: 1706107802077535733
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
