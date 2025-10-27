@@ -6,11 +6,7 @@ public class Pausemenu : MonoBehaviour
 {
     [Header("Panel Utama")]
     public GameObject pauseMenuUI;
-    public GameObject optionPanel;
-    public GameObject volumePanel;
-    public GameObject creditPanel;
-    public GameObject controlPanel;
-    public GameObject statusPanel;
+ 
 
     [Header("Slider Volume")]
     public Slider musicSlider;
@@ -50,11 +46,7 @@ public class Pausemenu : MonoBehaviour
         Time.timeScale = 0f;
         isPaused = true;
         pauseMenuUI.SetActive(true);
-        optionPanel.SetActive(false);
-        volumePanel.SetActive(false);
-        creditPanel.SetActive(false);
-        controlPanel.SetActive(false);
-        if (statusPanel != null) statusPanel.SetActive(false);
+
     }
 
     public void ResumeGame()
@@ -62,51 +54,8 @@ public class Pausemenu : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
         pauseMenuUI.SetActive(false);
-        optionPanel.SetActive(false);
-        volumePanel.SetActive(false);
-        creditPanel.SetActive(false);
-        controlPanel.SetActive(false);
-        if (statusPanel != null) statusPanel.SetActive(false);
     }
 
-    // --- Navigasi antar panel ---
-    public void OpenOptionPanel()
-    {
-        pauseMenuUI.SetActive(false);
-        optionPanel.SetActive(true);
-        volumePanel.SetActive(false);
-        creditPanel.SetActive(false);
-        controlPanel.SetActive(false);
-        if (statusPanel != null) statusPanel.SetActive(false);
-    }
-
-    public void OpenVolumePanel()
-    {
-        optionPanel.SetActive(false);
-        volumePanel.SetActive(true);
-    }
-
-    public void OpenCreditPanel()
-    {
-        pauseMenuUI.SetActive(false);
-        creditPanel.SetActive(true);
-    }
-
-    public void OpenControlPanel()
-    {
-        optionPanel.SetActive(false);
-        controlPanel.SetActive(true);
-    }
-
-    public void OpenStatusPanel()
-    {
-        pauseMenuUI.SetActive(false);
-        optionPanel.SetActive(false);
-        volumePanel.SetActive(false);
-        creditPanel.SetActive(false);
-        controlPanel.SetActive(false);
-        if (statusPanel != null) statusPanel.SetActive(true);
-    }
 
     // 🆕 Tombol Quit ke Main Menu
     public void QuitToMainMenu()
