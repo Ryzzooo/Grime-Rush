@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Grime-Rush.sln"
+    "dotnet.defaultSolution": "Grime Rush.sln"
 }
