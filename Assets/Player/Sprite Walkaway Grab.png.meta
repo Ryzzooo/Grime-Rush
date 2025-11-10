@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: b5096a201c2c6fb45955c0768f687e66
+guid: de2a00d8436fcb04da8bd8965f6d26cd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3202629968343306121
-    second: Sprite Forward Idle_0
+      213: 8539998371588629516
+    second: Sprite Walkaway Grab_0
   - first:
-      213: 166285959610540754
-    second: Sprite Forward Idle_1
+      213: -881619428868463421
+    second: Sprite Walkaway Grab_1
   - first:
-      213: -1009570648885438471
-    second: Sprite Forward Idle_2
+      213: -8152049307173178567
+    second: Sprite Walkaway Grab_2
   - first:
-      213: -8085801587300272081
-    second: Sprite Forward Idle_3
+      213: 2100842759769551188
+    second: Sprite Walkaway Grab_3
+  - first:
+      213: -5945044402085012053
+    second: Sprite Walkaway Grab_4
+  - first:
+      213: -7859350448475553624
+    second: Sprite Walkaway Grab_5
+  - first:
+      213: -3532012857541254387
+    second: Sprite Walkaway Grab_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -135,13 +144,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite Forward Idle_0
+      name: Sprite Walkaway Grab_0
       rect:
         serializedVersion: 2
-        x: 320
-        y: 159
-        width: 449
-        height: 1496
+        x: 116
+        y: 186
+        width: 390
+        height: 1469
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 98f8f1aecf6027c20800000000000000
-      internalID: 3202629968343306121
+      spriteID: c0464f8a54b248670800000000000000
+      internalID: 8539998371588629516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Forward Idle_1
+      name: Sprite Walkaway Grab_1
       rect:
         serializedVersion: 2
-        x: 1463
-        y: 159
-        width: 449
-        height: 1512
+        x: 1069
+        y: 186
+        width: 383
+        height: 1469
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d2a8b10334ce4200800000000000000
-      internalID: 166285959610540754
+      spriteID: 3c4663beccbd3c3f0800000000000000
+      internalID: -881619428868463421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Forward Idle_2
+      name: Sprite Walkaway Grab_2
       rect:
         serializedVersion: 2
-        x: 2501
-        y: 159
-        width: 449
-        height: 1523
+        x: 1914
+        y: 186
+        width: 383
+        height: 1467
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f7d58108d84df1f0800000000000000
-      internalID: -1009570648885438471
+      spriteID: 9333976b85a1ede80800000000000000
+      internalID: -8152049307173178567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite Forward Idle_3
+      name: Sprite Walkaway Grab_3
       rect:
         serializedVersion: 2
-        x: 3549
-        y: 159
-        width: 449
-        height: 1512
+        x: 2689
+        y: 186
+        width: 383
+        height: 1464
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +225,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f287da8fb4679cf80800000000000000
-      internalID: -8085801587300272081
+      spriteID: 451f309fb51b72d10800000000000000
+      internalID: 2100842759769551188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Walkaway Grab_4
+      rect:
+        serializedVersion: 2
+        x: 3397
+        y: 186
+        width: 383
+        height: 1467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad5ccf4d95fe7da0800000000000000
+      internalID: -5945044402085012053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Walkaway Grab_5
+      rect:
+        serializedVersion: 2
+        x: 4118
+        y: 186
+        width: 383
+        height: 1469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a0ce41686afde290800000000000000
+      internalID: -7859350448475553624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Walkaway Grab_6
+      rect:
+        serializedVersion: 2
+        x: 4860
+        y: 186
+        width: 390
+        height: 1469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d03242cf405cbfec0800000000000000
+      internalID: -3532012857541254387
       vertices: []
       indices: 
       edges: []
@@ -235,11 +310,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Sprite Forward Idle_0: 3202629968343306121
-      Sprite Forward Idle_1: 166285959610540754
-      Sprite Forward Idle_2: -1009570648885438471
-      Sprite Forward Idle_3: -8085801587300272081
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
