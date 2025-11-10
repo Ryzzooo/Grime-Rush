@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprite Walkaway Idle_0: 5781036662726748647
+      Sprite Walkaway Idle_1: 2484939569680997390
+      Sprite Walkaway Idle_2: 6443681262661352801
+      Sprite Walkaway Idle_3: 9178974586394190783
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

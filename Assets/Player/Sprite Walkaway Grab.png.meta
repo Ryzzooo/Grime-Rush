@@ -310,7 +310,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprite Walkaway Grab_0: 8539998371588629516
+      Sprite Walkaway Grab_1: -881619428868463421
+      Sprite Walkaway Grab_2: -8152049307173178567
+      Sprite Walkaway Grab_3: 2100842759769551188
+      Sprite Walkaway Grab_4: -5945044402085012053
+      Sprite Walkaway Grab_5: -7859350448475553624
+      Sprite Walkaway Grab_6: -3532012857541254387
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

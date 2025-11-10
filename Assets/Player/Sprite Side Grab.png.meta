@@ -310,7 +310,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprite Side Grab_0: 889610063654000828
+      Sprite Side Grab_1: -7543656899864001969
+      Sprite Side Grab_2: 1317294826745173934
+      Sprite Side Grab_3: -2692000134320244251
+      Sprite Side Grab_4: -6825843346819995695
+      Sprite Side Grab_5: 2385822508297119486
+      Sprite Side Grab_6: 7454628332750623253
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
