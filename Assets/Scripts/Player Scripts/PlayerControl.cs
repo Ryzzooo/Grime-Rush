@@ -1,14 +1,23 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerControl : MonoBehaviour
 {
     public Transform holdingSpot;
     private GameObject heldTrash;
-    private GameObject trashInRange = null;
     private BinController trashcanInRange = null;
-    private Animator binAnimator;
+    private PlayerMove moveScript;
+    Animator anim;
+    private GameObject curSparkle = null;
+    private TrashItem trashInRange = null;
 
-    // Update is called once per frame
+
+    void Awake()
+    {
+        moveScript = GetComponent<PlayerMove>();
+        anim = GetComponent<Animator>();
+    }
+
     void Update()
     {
         Interaction();
@@ -20,18 +29,29 @@ public class PlayerControl : MonoBehaviour
         {
             if (heldTrash != null && trashcanInRange != null)
             {
-                DropTrash();
+                StartCoroutine(DropTrash());
             }
             else if (heldTrash == null && trashInRange != null)
             {
-                PickUpTrash(trashInRange);
+                StartCoroutine(PickUpTrash(trashInRange));
             }
         }
     }
 
-    void PickUpTrash(GameObject trashToPickUp)
+    IEnumerator PickUpTrash(TrashItem trashToPickUp)
     {
-        heldTrash = trashToPickUp;
+        moveScript.setInteracting(true);
+
+        if (trashToPickUp != null)
+        {
+            trashToPickUp.SetHighlight(false);
+        }
+
+        trashInRange = null;
+        moveScript.PlayInteractionAnimation("ambil_depan");
+        yield return new WaitForSeconds(0.5f);
+
+        heldTrash = trashToPickUp.gameObject;
         heldTrash.transform.SetParent(holdingSpot);
         heldTrash.transform.localPosition = Vector3.zero;
 
@@ -40,41 +60,101 @@ public class PlayerControl : MonoBehaviour
         {
             trashCollider.enabled = false;
         }
+        moveScript.setInteracting(false);
     }
 
-    void DropTrash()
+    IEnumerator DropTrash()
     {
-        if (heldTrash != null)
+        moveScript.setInteracting(true);
+
+        Vector2 playerPos = transform.position;
+        Vector2 binPos = trashcanInRange.transform.position;
+        Vector2 diff = playerPos - binPos;
+
+        if (Mathf.Abs(diff.y) > Mathf.Abs(diff.x))
         {
-            Destroy(heldTrash);
+            if (diff.y > 0) 
+            {
+                anim.SetTrigger("buang_depan");
+            }
+            else 
+            {
+                anim.SetTrigger("buang_belakang");
+            }
+        }
+        else
+        {
+            if (diff.x > 0)
+            {
+                moveScript.SetFlipX(false); // Menghadap Kiri
+                moveScript.PlayInteractionAnimation("buang_samping");
+            }
+            else
+            {
+                moveScript.SetFlipX(true); // Menghadap Kanan
+                moveScript.PlayInteractionAnimation("buang_samping");
+            }
+        }
+
+        yield return new WaitForSeconds(0.7f);
+
+        TrashItem item = heldTrash.GetComponent<TrashItem>();
+
+        if (trashcanInRange != null && item != null)
+        {
+            trashcanInRange.ReceiveTrash(item);
             heldTrash = null;
         }
+        else
+        {
+            if (heldTrash != null)
+            {
+                Destroy(heldTrash);
+                heldTrash = null;
+            }
+        }
+        moveScript.setInteracting(false);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Sampah"))
         {
-            trashInRange = other.gameObject;
+            if(trashInRange == null)
+            {
+                TrashItem item = other.GetComponent<TrashItem>();
+                if (item != null)
+                {
+                    trashInRange = item;
+
+                    if (heldTrash == null)
+                    {
+                        trashInRange.SetHighlight(true);
+                    }
+                }
+            } 
         }
         if (other.CompareTag("TrashCan"))
         {
             trashcanInRange = other.GetComponent<BinController>();
-            trashcanInRange.OpenBin(true); 
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Sampah") && trashInRange != null)
+        if (other.CompareTag("Sampah") && trashInRange != null && other.gameObject == trashInRange.gameObject)
         {
+            trashInRange.SetHighlight(false);
             trashInRange = null;
         }
 
         if (other.CompareTag("TrashCan") && trashcanInRange != null)
         {
-            trashcanInRange.OpenBin(false);
-            trashcanInRange = null;
+            BinController exitingBin = other.GetComponent<BinController>();
+            if (exitingBin != null && exitingBin == trashcanInRange)
+            {
+                trashcanInRange = null;
+            }
         }
     }
 }
