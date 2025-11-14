@@ -8,8 +8,9 @@ public class PlayerControl : MonoBehaviour
     private BinController trashcanInRange = null;
     private PlayerMove moveScript;
     Animator anim;
-    private GameObject curSparkle = null;
     private TrashItem trashInRange = null;
+    private int trashDropped = 0;
+    bool isTutorialFinished = false;
 
 
     void Awake()
@@ -104,6 +105,11 @@ public class PlayerControl : MonoBehaviour
         {
             trashcanInRange.ReceiveTrash(item);
             heldTrash = null;
+            trashDropped++;
+            if (TutorialManager.instance != null)
+            {
+                isTutorialFinished = TutorialManager.instance.UpdateTrash(trashDropped);
+            }
         }
         else
         {
@@ -113,7 +119,11 @@ public class PlayerControl : MonoBehaviour
                 heldTrash = null;
             }
         }
-        moveScript.setInteracting(false);
+        
+        if (!isTutorialFinished)
+        {
+            moveScript.setInteracting(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
