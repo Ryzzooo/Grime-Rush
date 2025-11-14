@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: e03f9b8747120ca47a7ead5e79ee859e
+guid: 7754e6ebd254e7743a9570975086e5b4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6375023117993078046
-    second: Sampah Organik PNG_0
-  - first:
-      213: -3955489573628283609
-    second: Sampah Organik PNG_1
+      213: -8112157074665847983
+    second: Play__2_-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,45 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sampah Organik PNG_0
+      name: Play__2_-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 132
-        y: 0
-        width: 340
-        height: 763
+        x: 188
+        y: 128
+        width: 332
+        height: 200
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e29e11204e5787a0800000000000000
-      internalID: -6375023117993078046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sampah Organik PNG_1
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 0
-        width: 340
-        height: 761
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 725ff1b90374b19c0800000000000000
-      internalID: -3955489573628283609
+      spriteID: 153ce52ee14db6f80800000000000000
+      internalID: -8112157074665847983
       vertices: []
       indices: 
       edges: []
@@ -176,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6b9b657e3adc93944bcedeb33a7a3c66
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -186,8 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sampah Organik PNG_0: -6375023117993078046
-      Sampah Organik PNG_1: -3955489573628283609
+      Play__2_-removebg-preview_0: -8112157074665847983
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

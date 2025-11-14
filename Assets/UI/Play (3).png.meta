@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 017cbf54c89e8294c8b147ae352f8ab1
+guid: 3142f94d5858dc54db4e26d6b0baf06b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2450097633468744697
-    second: Play__1_-removebg-preview_0
+      213: 485126173946664319
+    second: Play (3)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Play__1_-removebg-preview_0
+      name: Play (3)_0
       rect:
         serializedVersion: 2
-        x: 180
-        y: 130
-        width: 337
-        height: 115
+        x: 319
+        y: 251
+        width: 642
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70cf11cfe218ffdd0800000000000000
-      internalID: -2450097633468744697
+      spriteID: f75d5555fa38bb600800000000000000
+      internalID: 485126173946664319
       vertices: []
       indices: 
       edges: []

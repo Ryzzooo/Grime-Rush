@@ -133,6 +133,6 @@ public class TutorialManager : MonoBehaviour
     // Dipanggil oleh tombol di panelDone
     public void DonePanel()
     {
-      
+        SceneManager.LoadScene("Stage 1");
     }
 }
