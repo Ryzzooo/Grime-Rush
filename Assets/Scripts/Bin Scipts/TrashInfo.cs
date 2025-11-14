@@ -5,5 +5,6 @@ public enum TrashType
     Kertas,
     Plastik,
     Kaca,
-    Logam
+    Logam,
+    Ewaste
 }
