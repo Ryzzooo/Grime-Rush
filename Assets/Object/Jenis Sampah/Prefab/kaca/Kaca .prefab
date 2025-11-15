@@ -149,9 +149,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trashType: 4
-  correctFact: 
-  wrongBinMessage: 
-  sparkleEffect: {fileID: 0}
+  correctFact: Glass can be recycled 100% with no limits!
+  wrongBinMessage: Glass waste should go into the gray bin!
+  sparkleEffect: {fileID: 4331033169775318210, guid: 85bc9ddb3cb29ac4bbae1e49beb078e9, type: 3}
 --- !u!114 &339769070560975865
 MonoBehaviour:
   m_ObjectHideFlags: 0

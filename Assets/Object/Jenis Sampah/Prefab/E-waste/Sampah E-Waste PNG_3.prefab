@@ -103,9 +103,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trashType: 6
-  correctFact: 
-  wrongBinMessage: 
-  sparkleEffect: {fileID: 0}
+  correctFact: This cable contains valuable copper that can be recovered!
+  wrongBinMessage: E-waste should go into the black bin!
+  sparkleEffect: {fileID: 4331033169775318210, guid: 85bc9ddb3cb29ac4bbae1e49beb078e9, type: 3}
 --- !u!61 &5455126701964187669
 BoxCollider2D:
   m_ObjectHideFlags: 0

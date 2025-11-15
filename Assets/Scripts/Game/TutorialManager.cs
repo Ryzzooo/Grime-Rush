@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class TutorialManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class TutorialManager : MonoBehaviour
     public GameObject panelDrop;
     public GameObject panelGuideBook;
     public GameObject panelDone;
+    [Header("Komponen UI")] // Kelompok baru
+    public TextMeshProUGUI trashCounterText;
 
     private PlayerMove playerMoveScript;
 
@@ -39,11 +42,16 @@ public class TutorialManager : MonoBehaviour
 
         playerMoveScript = FindFirstObjectByType<PlayerMove>();
 
+        UpdateTrashCounterText(totalTrash);
+
         StartTutorialStep(0);
     }
 
     public bool UpdateTrash(int curDropped)
     {
+        int remainingTrash = totalTrash - curDropped;
+        UpdateTrashCounterText(remainingTrash);
+
         if (curDropped >= totalTrash)
         {
             if (playerMoveScript != null)
@@ -54,6 +62,14 @@ public class TutorialManager : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    void UpdateTrashCounterText(int amount)
+    {
+        if (trashCounterText != null)
+        {
+            trashCounterText.text = "Trash : " + amount.ToString();
+        }
     }
 
     void StartTutorialStep(int step)

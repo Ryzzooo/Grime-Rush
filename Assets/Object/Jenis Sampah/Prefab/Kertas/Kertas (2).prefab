@@ -148,9 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68bf2eab53a2c9342bd6ab3e06ccd1ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trashType: 3
-  correctFact: plastik loh ini
-  wrongBinMessage: 
+  trashType: 2
+  correctFact: Recycling 1 ton of paper can save 17 trees.
+  wrongBinMessage: Paper waste should go into the blue bin!
   sparkleEffect: {fileID: 4331033169775318210, guid: 85bc9ddb3cb29ac4bbae1e49beb078e9, type: 3}
 --- !u!114 &2684627824437178862
 MonoBehaviour:

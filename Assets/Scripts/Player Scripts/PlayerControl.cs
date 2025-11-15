@@ -110,6 +110,10 @@ public class PlayerControl : MonoBehaviour
             {
                 isTutorialFinished = TutorialManager.instance.UpdateTrash(trashDropped);
             }
+            else if (LevelManager.instance != null)
+            {
+                LevelManager.instance.OnTrashDropped();
+            }
         }
         else
         {

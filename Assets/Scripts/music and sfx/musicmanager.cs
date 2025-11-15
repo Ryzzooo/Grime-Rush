@@ -60,14 +60,17 @@ public class MusicManager : MonoBehaviour
             case "Menu":
                 PlayMusic("menu");
                 break;
-            case "IntroScene":
-                PlayMusic("intro");
+            case "Tutorial":
+                PlayMusic("music1");
                 break;
-            case "SampleScene":
-                PlayMusic("game");
+            case "Stage 1":
+                PlayMusic("music1");
                 break;
-            case "Percobaan satu":
-                PlayMusic("game");
+            case "Stage 2":
+                PlayMusic("music2");
+                break;
+            case "Stage 3":
+                PlayMusic("music3");
                 break;
             default:
                 Debug.Log("No matching music for scene: " + sceneName);

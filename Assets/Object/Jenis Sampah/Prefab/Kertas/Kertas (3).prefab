@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trashType: 2
-  correctFact: Ini kertas jir
-  wrongBinMessage: 
+  correctFact: This paper can be recycled 5 to 7 times!
+  wrongBinMessage: Paper waste should go into the blue bin!
   sparkleEffect: {fileID: 4331033169775318210, guid: 85bc9ddb3cb29ac4bbae1e49beb078e9, type: 3}
 --- !u!114 &-1973959822614121940
 MonoBehaviour:

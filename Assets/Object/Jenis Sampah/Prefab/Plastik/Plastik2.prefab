@@ -163,6 +163,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trashType: 3
-  correctFact: 
-  wrongBinMessage: 
+  correctFact: This bottle can be recycled into clothes, bags, or brooms!
+  wrongBinMessage: Plastic waste should go into the yellow bin!
   sparkleEffect: {fileID: 4331033169775318210, guid: 85bc9ddb3cb29ac4bbae1e49beb078e9, type: 3}

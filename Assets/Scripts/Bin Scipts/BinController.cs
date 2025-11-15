@@ -19,13 +19,15 @@ public class BinController : MonoBehaviour
     {
         if (item.trashType == this.acceptsType)
         {
-            print("Benar +10 poin");
-            print("Fakta: " + item.correctFact);
+            string correctMessage = "+10 Poin!\n\n" + item.correctFact;
+            NotificationManager.instance.ShowNotification(correctMessage);
+            ScoreManager.instance.AddScore(10);
         }
         else
         {
-            print("Salah -5 point");
-            print("Koreksi: " + item.wrongBinMessage);
+            string wrongMessage = "-5 Poin!\n\n" + item.wrongBinMessage;
+            NotificationManager.instance.ShowNotification(wrongMessage);
+            ScoreManager.instance.AddScore(-5);
         }
         Destroy(item.gameObject);
     }

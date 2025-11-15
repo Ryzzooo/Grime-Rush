@@ -149,9 +149,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trashType: 6
-  correctFact: 
-  wrongBinMessage: 
-  sparkleEffect: {fileID: 0}
+  correctFact: Batteries contain toxic chemicals that can harm soil and water if
+    disposed of improperly.
+  wrongBinMessage: E-waste should go into the black bin!
+  sparkleEffect: {fileID: 4331033169775318210, guid: 85bc9ddb3cb29ac4bbae1e49beb078e9, type: 3}
 --- !u!114 &8956929411298009627
 MonoBehaviour:
   m_ObjectHideFlags: 0
