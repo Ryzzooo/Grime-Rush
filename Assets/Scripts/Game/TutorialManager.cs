@@ -7,6 +7,9 @@ public class TutorialManager : MonoBehaviour
 {
     public static TutorialManager instance;
 
+    public AudioClip victorySound; // <-- SLOT BARU UNTUK SUARA
+    private AudioSource sfxSource;
+
     public GameObject panelMove;
     public GameObject panelPickUp;
     public GameObject panelDrop;
@@ -30,6 +33,7 @@ public class TutorialManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        sfxSource = GetComponent<AudioSource>();
     }
 
     void Start ()
@@ -54,6 +58,11 @@ public class TutorialManager : MonoBehaviour
 
         if (curDropped >= totalTrash)
         {
+            if (victorySound != null && sfxSource != null)
+            {
+                sfxSource.PlayOneShot(victorySound);
+            }
+            
             if (playerMoveScript != null)
             {
                 playerMoveScript.setInteracting(true);

@@ -2,11 +2,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro; // Penting untuk TextMeshPro
+using UnityEngine.Video;
 
 public class LevelManager : MonoBehaviour
 {
     // --- Singleton (agar gampang dipanggil) ---
     public static LevelManager instance;
+
+    public AudioClip victorySound; // <-- SLOT BARU UNTUK SUARA
+    private AudioSource sfxSource;
 
     [Header("Tujuan Level")]
     public int totalTrashForThisLevel = 10; // Tentukan target level ini
@@ -22,6 +26,10 @@ public class LevelManager : MonoBehaviour
     [Header("Level Berikutnya")]
     public string nextSceneName; // Nama scene (misal "Stage_2")
 
+    [Header("Cutscene")]
+    public VideoClip outroVideo;
+    public string nextLevelSceneName = "Stage 2";
+
     private PlayerMove playerMoveScript; // Untuk membekukan player
 
     void Awake()
@@ -34,6 +42,7 @@ public class LevelManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        sfxSource = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -72,6 +81,10 @@ public class LevelManager : MonoBehaviour
 
     void ShowLevelCompletePanel()
     {
+        if (victorySound != null && sfxSource != null)
+        {
+            sfxSource.PlayOneShot(victorySound);
+        }
         // 1. Tampilkan panel
         panelLevelComplete.SetActive(true);
 
@@ -94,6 +107,11 @@ public class LevelManager : MonoBehaviour
     // Pasang ini di tombol 'NextLevelButton'
     public void GoToNextLevel()
     {
-        SceneManager.LoadScene(nextSceneName);
+        CutsceneDataManager.LoadCutsceneScene(outroVideo, nextLevelSceneName);
+    }
+
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

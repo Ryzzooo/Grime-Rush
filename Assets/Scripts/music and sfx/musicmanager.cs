@@ -128,4 +128,36 @@ public class MusicManager : MonoBehaviour
 
         musicSource.volume = 1f;
     }
+
+    public void FadeOutMusic()
+    {
+        // Hentikan coroutine lain jika sedang fade in/out
+        StopAllCoroutines(); 
+        StartCoroutine(FadeOutRoutine());
+    }
+
+    IEnumerator FadeOutRoutine()
+    {
+        Debug.Log("Fading out music...");
+
+        // Ambil volume saat ini (jika kamu mengubahnya, 
+        // tapi kita asumsikan 1f sesuai kodemu)
+        float startVolume = musicSource.volume; 
+
+        // Fade out musik
+        for (float t = 0; t < fadeDuration; t += Time.unscaledDeltaTime)
+        {
+            // Lerp dari volume saat ini ke 0
+            musicSource.volume = Mathf.Lerp(startVolume, 0f, t / fadeDuration);
+            yield return null;
+        }
+
+        // Pastikan mati total
+        musicSource.volume = 0f;
+        musicSource.Stop();
+        musicSource.clip = null; // Kosongkan klip
+        
+        // (PENTING) Kembalikan volume ke 1 agar siap untuk fade-in berikutnya
+        musicSource.volume = 1f; 
+    }
 }

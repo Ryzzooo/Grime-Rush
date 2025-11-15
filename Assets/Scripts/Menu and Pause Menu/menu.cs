@@ -1,11 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class MainMenuUI : MonoBehaviour
 {
     public Slider musicSlider;
     public Slider sfxSlider;
+    public VideoClip introVideo;
+    public string firstLevelSceneName = "Stage 1";
 
     private void Start()
     {
@@ -14,6 +17,12 @@ public class MainMenuUI : MonoBehaviour
 
         musicSlider.onValueChanged.AddListener(MusicManager.Instance.SetVolume);
         sfxSlider.onValueChanged.AddListener(SoundManager.Instance.SetVolume);
+    }
+
+    public void OnPlayButtonClicked()
+    {
+        // Panggil 'Pengantar Surat'
+        CutsceneDataManager.LoadCutsceneScene(introVideo, firstLevelSceneName);
     }
 
     public void PlayGame()

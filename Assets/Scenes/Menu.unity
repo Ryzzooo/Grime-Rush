@@ -327,12 +327,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -375,6 +375,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSlider: {fileID: 131253666}
   sfxSlider: {fileID: 358049851}
+  introVideo: {fileID: 32900000, guid: 682e11dcb8dc39745bca9bc97ebdff8a, type: 3}
+  firstLevelSceneName: Tutorial
 --- !u!1 &77793658
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,14 +779,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158668377}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 774865009}
   - {fileID: 1314827572}
-  m_Father: {fileID: 1978608795}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &158668379
 MonoBehaviour:
@@ -846,11 +848,11 @@ MonoBehaviour:
   - trackName: menu
     clip: {fileID: 8300000, guid: 777f54410c056ea44873648de5e9d1e7, type: 3}
   - trackName: music1
-    clip: {fileID: 8300000, guid: f2de09774ba504147b5c64f9dfba94e4, type: 3}
+    clip: {fileID: 8300000, guid: 6eb633f9e54b5b4489344b9231eac3f3, type: 3}
   - trackName: music2
-    clip: {fileID: 8300000, guid: 777f54410c056ea44873648de5e9d1e7, type: 3}
+    clip: {fileID: 8300000, guid: 0622c24066173614cadf0027898a7206, type: 3}
   - trackName: music3
-    clip: {fileID: 8300000, guid: f2de09774ba504147b5c64f9dfba94e4, type: 3}
+    clip: {fileID: 8300000, guid: 01ac2f863483dab4c80a9b26b026735a, type: 3}
 --- !u!1 &225423465
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,6 +1127,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284677595}
   m_CullTransparentMesh: 1
+--- !u!1 &328950226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 328950228}
+  - component: {fileID: 328950227}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &328950227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328950226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2dc6fb30bea3354a98f3bb8f6f4d962, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &328950228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328950226}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &343766705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,7 +1752,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2D Artist & Sound
+  m_text: Artist
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eafadd7cbe69bdc4c80a42bf62c3efeb, type: 2}
   m_sharedMaterial: {fileID: 4765089559645770659, guid: eafadd7cbe69bdc4c80a42bf62c3efeb, type: 2}
@@ -2898,7 +2944,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 69539215}
         m_TargetAssemblyTypeName: MainMenuUI, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: OnPlayButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4721,7 +4767,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 69539211}
-  - {fileID: 158668378}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1978608796
@@ -4885,3 +4930,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 1978608795}
   - {fileID: 1227143379}
+  - {fileID: 158668378}
+  - {fileID: 328950228}

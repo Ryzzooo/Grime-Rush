@@ -1631,7 +1631,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5074
+  m_SortingOrder: 199
   m_Sprite: {fileID: 3202629968343306121, guid: b5096a201c2c6fb45955c0768f687e66, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1752,7 +1752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773d44c01e62b8447b1859a596d4dee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectHeight: 100
+  objectHeight: 2.5
   sortingOrderOffset: 0
 --- !u!1001 &234880652
 PrefabInstance:
@@ -3415,7 +3415,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.95, y: -0.74, z: -10}
+  m_LocalPosition: {x: 5.95, y: -0.74000007, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3517,12 +3517,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -5486,7 +5486,7 @@ Transform:
   m_GameObject: {fileID: 1024783020}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.67, y: 1.9, z: 0}
+  m_LocalPosition: {x: 9.75, y: 1.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5939,7 +5939,7 @@ Transform:
   m_GameObject: {fileID: 1104099155}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.6, y: 1.9, z: 0}
+  m_LocalPosition: {x: -14.76, y: 1.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6495,11 +6495,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e98fc496079b006449d955f7de6c970f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  victorySound: {fileID: 8300000, guid: 316b36df93a5c5848b020d7852c8c713, type: 3}
   totalTrashForThisLevel: 25
   panelLevelComplete: {fileID: 273624384}
   scoreValueText: {fileID: 1136116345}
   trashCounterText: {fileID: 1334506413}
   nextSceneName: Menu
+  outroVideo: {fileID: 0}
+  nextLevelSceneName: Menu
 --- !u!114 &1257086049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7493,8 +7496,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tracks:
+  - trackName: menu
+    clip: {fileID: 8300000, guid: 777f54410c056ea44873648de5e9d1e7, type: 3}
+  - trackName: music1
+    clip: {fileID: 8300000, guid: f2de09774ba504147b5c64f9dfba94e4, type: 3}
+  - trackName: music2
+    clip: {fileID: 8300000, guid: 777f54410c056ea44873648de5e9d1e7, type: 3}
   - trackName: music3
-    clip: {fileID: 8300000, guid: 01ac2f863483dab4c80a9b26b026735a, type: 3}
+    clip: {fileID: 8300000, guid: f2de09774ba504147b5c64f9dfba94e4, type: 3}
 --- !u!4 &1392696879
 Transform:
   m_ObjectHideFlags: 0
@@ -7723,7 +7732,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.21204406, y: -5.704316}
+  m_Offset: {x: -2.8704243, y: -5.704316}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7733,7 +7742,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5759119, y: 21.521711}
+  m_Size: {x: 6.052355, y: 21.521711}
   m_EdgeRadius: 0
 --- !u!1001 &1434466913
 PrefabInstance:
@@ -8201,7 +8210,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1257086048}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: GoToNextLevel
+        m_MethodName: GoToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10377,7 +10386,7 @@ Transform:
   m_GameObject: {fileID: 2135475388}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -1.7, y: 14.9, z: 0}
+  m_LocalPosition: {x: -1.7, y: 14.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
